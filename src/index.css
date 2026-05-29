@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0B1F3A;
+  --color-teal: #1A6E6E;
+  --color-gold: #C9A84C;
+  --color-white: #FAFAFA;
+  --color-light: #F0F4F8;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
+:root {
+  --navy: #0B1F3A;
+  --teal: #1A6E6E;
+  --gold: #C9A84C;
+  --white: #FAFAFA;
+  --light: #F0F4F8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--white);
+  color: var(--navy);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.font-serif {
+  font-family: var(--font-sans);
+}
+
+/* Animations */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+/* Delay utilities */
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Animated Gradient Background for Hero */
+@keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, var(--navy), var(--teal), #123456);
+  background-size: 400% 400%;
+  animation: gradient-bg 15s ease infinite;
+}
+
+/* Hover glow effect for cards */
+.hover-gold-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-gold-glow:hover {
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.4);
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
