@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Services from './components/Services';
 import ClinicGallery from './components/ClinicGallery';
+import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import Reviews from './components/Reviews';
 import HoursAndBooking from './components/BookingForm';
@@ -19,8 +19,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Services />
         <ClinicGallery />
+        <Services />
         <WhyChooseUs />
         <Reviews />
         <HoursAndBooking />
