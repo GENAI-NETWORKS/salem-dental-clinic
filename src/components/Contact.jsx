@@ -14,7 +14,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-12 bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
+        <div className="flex flex-col lg:flex-row bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
           
           {/* Left Column: Contact Details */}
           <div className="w-full lg:w-1/2 p-8 md:p-12 bg-navy text-white relative overflow-hidden">
@@ -83,17 +83,17 @@ const Contact = () => {
           </div>
 
           {/* Right Column: Map */}
-          <div className="w-full lg:w-1/2 min-h-[400px]">
+          <div className="w-full lg:w-1/2 h-[350px] sm:h-[400px] lg:h-auto flex">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.382436440263!2d78.13606737505524!3d11.66698948854089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf0426b6f75fd%3A0xc621379373cfc2d0!2sSalem%20Dental%20Centre%20-%20Dr.%20Rangas!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
               width="100%" 
               height="100%" 
-              style={{ border: 0, minHeight: '100%' }} 
+              style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
               title="Salem Dental Centre Location"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover flex-1"
             ></iframe>
           </div>
           
