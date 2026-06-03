@@ -21,7 +21,6 @@ const ClinicGallery = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
-          <span className="text-gold font-bold text-sm uppercase tracking-widest mb-3 block">Inside Salem Dental</span>
           <h2 className="text-3xl md:text-5xl font-sans font-extrabold text-white mb-6">Our Premium Facility</h2>
           <div className="w-16 h-1 bg-teal mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed">
