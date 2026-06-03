@@ -45,66 +45,7 @@ const HoursAndBooking = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
 
-          {/* ── LEFT: Opening Hours ── */}
-          <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-            {/* Header bar */}
-            <div className="bg-navy px-8 py-6 flex items-center gap-4">
-              <div className="w-10 h-10 rounded-xl bg-teal/20 flex items-center justify-center">
-                <Clock className="w-5 h-5 text-teal" />
-              </div>
-              <div>
-                <h3 className="text-white font-bold text-lg leading-none">Opening Hours</h3>
-                <p className="text-gray-400 text-xs mt-1">Visit us at your convenience</p>
-              </div>
-            </div>
-
-            {/* Schedule rows */}
-            <div className="flex-1 p-6 space-y-1">
-              {schedule.map((slot, i) => {
-                const isToday = i === adjustedIndex;
-                return (
-                  <div
-                    key={i}
-                    className={`flex justify-between items-center px-4 py-3 rounded-xl transition-all ${
-                      isToday
-                        ? 'bg-teal text-white'
-                        : slot.closed
-                        ? 'opacity-50'
-                        : 'hover:bg-gray-50'
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className={`font-semibold text-sm ${isToday ? 'text-white' : 'text-navy'}`}>
-                        {slot.day}
-                      </span>
-                      {isToday && (
-                        <span className="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
-                          Today
-                        </span>
-                      )}
-                    </div>
-                    <span className={`text-sm font-medium ${
-                      slot.closed ? 'text-red-400' : isToday ? 'text-teal-100' : 'text-gray-500'
-                    }`}>
-                      {slot.hours}
-                    </span>
-                  </div>
-                );
-              })}
-            </div>
-
-            {/* Bottom call strip */}
-            <div className="px-6 pb-6">
-              <a
-                href="tel:+919843308369"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gold text-white text-sm font-bold hover:bg-[#b89741] transition-colors"
-              >
-                Call: 98433 08369
-              </a>
-            </div>
-          </div>
-
-          {/* ── RIGHT: Booking Form ── */}
+          {/* ── LEFT: Booking Form ── */}
           <div className="bg-navy rounded-3xl shadow-sm overflow-hidden flex flex-col">
             {/* Header bar */}
             <div className="px-8 py-6 flex items-center gap-4 border-b border-white/10">
@@ -167,6 +108,65 @@ const HoursAndBooking = () => {
                 {status === 'success' && <><CheckCircle className="w-4 h-4" /> Sent! Check WhatsApp</>}
               </button>
             </form>
+          </div>
+
+          {/* ── RIGHT: Opening Hours ── */}
+          <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+            {/* Header bar */}
+            <div className="bg-navy px-8 py-6 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-xl bg-teal/20 flex items-center justify-center">
+                <Clock className="w-5 h-5 text-teal" />
+              </div>
+              <div>
+                <h3 className="text-white font-bold text-lg leading-none">Opening Hours</h3>
+                <p className="text-gray-400 text-xs mt-1">Visit us at your convenience</p>
+              </div>
+            </div>
+
+            {/* Schedule rows */}
+            <div className="flex-1 p-6 space-y-1">
+              {schedule.map((slot, i) => {
+                const isToday = i === adjustedIndex;
+                return (
+                  <div
+                    key={i}
+                    className={`flex justify-between items-center px-4 py-3 rounded-xl transition-all ${
+                      isToday
+                        ? 'bg-teal text-white'
+                        : slot.closed
+                        ? 'opacity-50'
+                        : 'hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className={`font-semibold text-sm ${isToday ? 'text-white' : 'text-navy'}`}>
+                        {slot.day}
+                      </span>
+                      {isToday && (
+                        <span className="bg-white/20 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
+                          Today
+                        </span>
+                      )}
+                    </div>
+                    <span className={`text-sm font-medium ${
+                      slot.closed ? 'text-red-400' : isToday ? 'text-teal-100' : 'text-gray-500'
+                    }`}>
+                      {slot.hours}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Bottom call strip */}
+            <div className="px-6 pb-6">
+              <a
+                href="tel:+919843308369"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gold text-white text-sm font-bold hover:bg-[#b89741] transition-colors"
+              >
+                Call: 98433 08369
+              </a>
+            </div>
           </div>
 
         </div>

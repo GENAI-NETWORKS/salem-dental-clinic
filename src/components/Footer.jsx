@@ -36,14 +36,14 @@ const Footer = () => {
                   <a href="tel:9843308369" className="font-medium hover:text-gold transition-colors text-lg">98433 08369</a>
                 </div>
               </div>
-              <div className="flex items-center gap-4 text-gray-300 group cursor-pointer" onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004', '_blank')}>
+              <div className="flex items-center gap-4 text-gray-300 group cursor-pointer" onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004', '_blank')}>
                 <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center shrink-0 border border-white/10 group-hover:bg-teal/20 group-hover:border-teal/30 transition-colors">
                   <MapPin className="w-5 h-5 text-gold" />
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 font-semibold uppercase tracking-wider mb-0.5">Clinic Location</p>
                   <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+                    href="https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
                     target="_blank" rel="noopener noreferrer"
                     className="font-medium text-lg group-hover:text-gold transition-colors"
                   >

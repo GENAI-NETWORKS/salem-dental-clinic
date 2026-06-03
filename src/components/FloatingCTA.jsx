@@ -16,7 +16,7 @@ const FloatingCTA = () => {
           <span className="truncate">Book Appointment</span>
         </a>
         <a 
-          href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+          href="https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
           target="_blank" rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-1.5 bg-teal text-white py-3 px-1 rounded-[14px] text-[12px] sm:text-[13px] font-semibold active:scale-95 transition-transform"
         >
@@ -53,7 +53,7 @@ const FloatingCTA = () => {
           
           {/* Location (Contact) */}
           <a 
-            href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+            href="https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
             target="_blank" rel="noopener noreferrer"
             className="w-14 h-14 bg-white text-teal rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300" 
             aria-label="Location"

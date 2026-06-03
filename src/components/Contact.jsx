@@ -24,7 +24,7 @@ const Contact = () => {
             
             <div className="space-y-8 relative z-10 mb-12">
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+                href="https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
                 target="_blank" rel="noopener noreferrer"
                 className="flex items-start gap-4 group"
               >
@@ -71,7 +71,7 @@ const Contact = () => {
                 Call Now
               </a>
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+                href="https://www.google.com/maps/search/?api=1&query=SALEM+DENTAL+CENTRE+Dr.Rangas,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 px-6 rounded-full font-bold transition-colors"
