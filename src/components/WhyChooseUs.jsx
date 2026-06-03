@@ -32,7 +32,6 @@ const WhyChooseUs = () => {
           
           {/* ── Left side: Sticky Title & Context ── */}
           <div className="lg:w-1/3 lg:sticky lg:top-32 self-start">
-            <span className="text-gold font-bold text-xs uppercase tracking-widest mb-3 block">Our Standards</span>
             <h2 className="text-4xl md:text-5xl font-sans font-extrabold text-navy leading-[1.1] mb-6">
               Why Choose <br className="hidden lg:block"/> Salem Dental?
             </h2>
