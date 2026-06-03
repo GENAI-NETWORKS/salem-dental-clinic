@@ -10,7 +10,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-28 bg-white overflow-hidden">
+    <section id="about" className="py-10 md:py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
         {/* ── Top label ── */}
@@ -28,7 +28,7 @@ const About = () => {
             <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl" style={{ aspectRatio: '4/5' }}>
               <img
                 src={doctorImg}
-                alt="Dr. G. Aarthi Ranganathan"
+                alt="Dr. G. Aarthi Ranganathan - Top Rated Dentist in Salem"
                 className="w-full h-full object-cover object-top"
               />
               {/* Bottom gradient */}
@@ -55,13 +55,13 @@ const About = () => {
           <div className="lg:col-span-7 lg:pt-4">
 
             <h2 className="text-4xl md:text-5xl xl:text-6xl font-sans font-extrabold text-navy leading-[1.05] mb-6">
-              Excellence in<br />
+              Salem's Choice for<br />
               <span className="text-teal">Painless Dentistry.</span>
             </h2>
 
             <p className="text-gray-500 text-lg leading-relaxed text-justify mb-4">
-              At Salem Dental Centre, every patient walks in as a concern and leaves as a confident smile. Led by{' '}
-              <span className="text-navy font-semibold">Dr. G. Aarthi Ranganathan, MDS</span>, the clinic combines
+              Recognized as a premium dental clinic in Salem, Salem Dental Centre ensures every patient walks in with a concern and leaves with a confident smile. Led by{' '}
+              <span className="text-navy font-semibold">Dr. G. Aarthi Ranganathan, MDS</span>, an experienced root canal specialist, the clinic combines
               advanced digital technology with genuine compassion making even complex procedures comfortable and stress-free.
             </p>
 

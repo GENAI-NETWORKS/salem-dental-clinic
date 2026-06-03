@@ -13,7 +13,7 @@ import FloatingCTA from './components/FloatingCTA';
 
 function App() {
   return (
-    <div className="font-sans antialiased text-navy bg-white min-h-screen">
+    <div className="font-sans antialiased text-navy bg-white min-h-screen pb-[70px] md:pb-0">
       <Navbar />
       
       <main>

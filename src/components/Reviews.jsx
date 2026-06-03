@@ -40,30 +40,11 @@ const reviews = [
 ];
 
 const Reviews = () => {
-  const scrollRef = useRef(null);
-
-  // Auto-scroll logic
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (scrollRef.current) {
-        const { current } = scrollRef;
-        const maxScrollLeft = current.scrollWidth - current.clientWidth;
-        
-        // If we've reached the end, scroll back to the beginning
-        if (current.scrollLeft >= maxScrollLeft - 10) {
-          current.scrollTo({ left: 0, behavior: 'smooth' });
-        } else {
-          // Scroll right by roughly the width of one card + gap
-          current.scrollBy({ left: 350, behavior: 'smooth' });
-        }
-      }
-    }, 3500); // Scrolls every 3.5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
+  // Double the reviews to create a seamless infinite marquee effect
+  const doubledReviews = [...reviews, ...reviews];
 
   return (
-    <section id="reviews" className="py-20 md:py-32 bg-light relative overflow-hidden">
+    <section id="reviews" className="py-10 md:py-16 bg-light relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
@@ -73,18 +54,16 @@ const Reviews = () => {
               Real Smiles, <br className="hidden md:block"/> Real Reviews.
             </h2>
           </div>
-          {/* Scroll buttons removed as requested */}
         </div>
+      </div>
 
-        <div 
-          ref={scrollRef}
-          className="flex overflow-x-auto gap-6 pb-12 pt-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4 sm:mx-0 sm:px-0"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {reviews.map((review, index) => (
+      {/* Full-width continuous marquee container */}
+      <div className="flex overflow-hidden relative w-full group py-8">
+        <div className="flex w-max animate-marquee gap-6 px-4">
+          {doubledReviews.map((review, index) => (
             <div 
               key={index} 
-              className="min-w-[320px] md:min-w-[400px] snap-center bg-white p-8 rounded-2xl shadow-xl shadow-navy/5 border-t-4 border-gold hover:-translate-y-1 transition-transform duration-300 flex flex-col"
+              className="w-[320px] md:w-[400px] flex-shrink-0 bg-white p-8 rounded-2xl shadow-xl shadow-navy/5 border-t-4 border-gold hover:-translate-y-1 transition-transform duration-300 flex flex-col"
             >
               {/* Header: Avatar, Name, Stars, Quote Icon */}
               <div className="flex justify-between items-start mb-6">
@@ -117,7 +96,6 @@ const Reviews = () => {
             </div>
           ))}
         </div>
-        
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, ArrowUpRight } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 md:py-32 bg-white">
+    <section id="contact" className="py-10 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
@@ -23,18 +23,22 @@ const Contact = () => {
             <h3 className="text-3xl font-serif font-bold mb-8 relative z-10">Contact Information</h3>
             
             <div className="space-y-8 relative z-10 mb-12">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+                target="_blank" rel="noopener noreferrer"
+                className="flex items-start gap-4 group"
+              >
+                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                   <MapPin className="w-6 h-6 text-gold" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold mb-1">Our Location</h4>
-                  <p className="text-gray-300 leading-relaxed">
+                  <h4 className="text-lg font-bold mb-1 group-hover:text-gold transition-colors">Our Location</h4>
+                  <p className="text-gray-300 leading-relaxed group-hover:text-white transition-colors">
                     Omalur Main Rd, Narasothipatti,<br />
                     Salem, Tamil Nadu 636004
                   </p>
                 </div>
-              </div>
+              </a>
               
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
@@ -42,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold mb-1">Phone Number</h4>
-                  <p className="text-gray-300 text-xl">+91 98433 08369</p>
+                  <p className="text-gray-300 text-xl">98433 08369</p>
                 </div>
               </div>
 
@@ -67,7 +71,7 @@ const Contact = () => {
                 Call Now
               </a>
               <a 
-                href="https://maps.google.com/?q=Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
+                href="https://www.google.com/maps/search/?api=1&query=Salem+Dental+Centre,+Omalur+Main+Rd,+Narasothipatti,+Salem,+Tamil+Nadu+636004" 
                 target="_blank" 
                 rel="noreferrer"
                 className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white py-3 px-6 rounded-full font-bold transition-colors"

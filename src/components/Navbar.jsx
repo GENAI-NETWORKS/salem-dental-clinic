@@ -41,8 +41,9 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <a href="#home" className="flex items-center">
-                <img src={logo} alt="Salem Dental Centre Logo" className="h-12 w-auto transition-all bg-white p-1 rounded-md shadow-sm" />
+              <a href="#home" className="flex items-center gap-2 sm:gap-3">
+                <img src={logo} alt="Salem Dental Centre Logo" className="h-10 sm:h-12 w-auto transition-all bg-white p-1 rounded-md shadow-sm" />
+                <span className={`font-bold text-[15px] sm:text-xl tracking-tight ${scrolled ? 'text-navy' : 'text-white'}`}>Salem Dental Centre</span>
               </a>
             </div>
             
@@ -71,6 +72,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(true)}
+                aria-label="Open main menu"
                 className={`focus:outline-none transition-colors ${
                   scrolled ? 'text-navy hover:text-teal' : 'text-white hover:text-gold'
                 }`}
@@ -99,6 +101,7 @@ const Navbar = () => {
         <div className="flex justify-end p-5">
           <button 
             onClick={() => setIsOpen(false)} 
+            aria-label="Close menu"
             className="text-gray-400 hover:text-teal bg-gray-50 hover:bg-teal/10 rounded-full p-2 transition-colors"
           >
             <X className="h-6 w-6" />

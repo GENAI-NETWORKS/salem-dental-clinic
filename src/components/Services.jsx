@@ -11,7 +11,7 @@ const servicesList = [
     tagColor: 'bg-blue-500',
   },
   {
-    title: 'Tooth Whitening',
+    title: 'Teeth Whitening',
     description: 'Professional, safe whitening treatments that brighten your teeth by multiple shades instantly.',
     icon: Sparkles,
     image: 'https://media.istockphoto.com/id/475063916/photo/before-and-after-whitening.webp?a=1&b=1&s=612x612&w=0&k=20&c=Sv3ZTkEuAUsCp5qG035SFw5xtRD1hIpBXutTaPv7_h0=',
@@ -19,7 +19,7 @@ const servicesList = [
     tagColor: 'bg-purple-500',
   },
   {
-    title: 'Dental Implants',
+    title: 'Dental Implants in Salem',
     description: 'Permanent, secure replacements for missing teeth that look and function like natural teeth.',
     icon: Activity,
     image: 'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=500&auto=format&fit=crop&q=60',
@@ -35,7 +35,7 @@ const servicesList = [
     tagColor: 'bg-amber-500',
   },
   {
-    title: 'Root Canal Treatment',
+    title: 'Painless Root Canal Treatment',
     description: 'Expert, painless therapy by our specialist to save infected teeth and relieve severe pain.',
     icon: ShieldAlert,
     image: 'https://plus.unsplash.com/premium_photo-1744142824792-ea371bd1783d?w=500&auto=format&fit=crop&q=60',
@@ -54,13 +54,13 @@ const servicesList = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-20 bg-light">
+    <section id="services" className="py-10 md:py-16 bg-light">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-gold text-xs font-bold uppercase tracking-widest">What We Offer</span>
-          <h2 className="text-4xl md:text-5xl font-sans font-bold text-navy mt-2 mb-4">Our Premium Services</h2>
+          <h2 className="text-4xl md:text-5xl font-sans font-bold text-navy mt-2 mb-4">Premium Dental Services in Salem</h2>
           <div className="w-16 h-1 bg-gold mx-auto mb-4"></div>
           <p className="text-gray-500 leading-relaxed">
             Comprehensive dental care powered by advanced technology, delivered with compassion.

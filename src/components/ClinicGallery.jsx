@@ -14,7 +14,7 @@ const ClinicGallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-24 bg-navy relative overflow-hidden">
+    <section id="gallery" className="py-10 md:py-16 bg-navy relative overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-full bg-teal/10 blur-[100px] pointer-events-none rounded-full"></div>
 
