@@ -22,7 +22,7 @@ const HoursAndBooking = () => {
     setStatus('loading');
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    const text = `*New Appointment Request*%0A%0A*Name:* ${data.name}%0A*Phone:* ${data.phone}%0A*Service:* ${data.service}%0A*Date:* ${data.date}%0A*Message:* ${data.message || 'N/A'}`;
+    const text = `*New Appointment Request*%0A%0A*Name:* ${data.name}%0A*Age:* ${data.age}%0A*Gender:* ${data.gender}%0A*Phone:* ${data.phone}%0A*Date:* ${data.date}%0A*Message:* ${data.message || 'N/A'}`;
     setTimeout(() => {
       setStatus('success');
       window.open(`https://wa.me/919843308369?text=${text}`, '_blank');
@@ -77,18 +77,23 @@ const HoursAndBooking = () => {
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-gray-400 mb-1">Service</label>
-                  <select name="service" required defaultValue="" className={inputClass}>
-                    <option value="" disabled>Select service</option>
-                    {['General Consultation','Digital Smile Designing','Tooth Whitening','Dental Implants','Invisible Clear Aligners','Root Canal Treatment','Gummy Smile Correction'].map(s => (
-                      <option key={s} value={s}>{s}</option>
-                    ))}
-                  </select>
+                  <label className="block text-xs font-semibold text-gray-400 mb-1">Age</label>
+                  <input type="number" name="age" required min="1" max="120" className={inputClass} placeholder="Age" />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-gray-400 mb-1">Preferred Date</label>
-                  <input type="date" name="date" required className={inputClass} />
+                  <label className="block text-xs font-semibold text-gray-400 mb-1">Gender</label>
+                  <select name="gender" required defaultValue="" className={inputClass}>
+                    <option value="" disabled>Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                  </select>
                 </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-gray-400 mb-1">Preferred Date</label>
+                <input type="date" name="date" required className={inputClass} />
               </div>
 
               <div className="flex-1 flex flex-col min-h-[120px]">
